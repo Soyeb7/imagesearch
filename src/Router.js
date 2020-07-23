@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {HashRouter, Switch, Route} from 'react-router-dom'
 
 import App from './App'
 import ImageView from './ImageView/ImageView'
@@ -9,12 +9,12 @@ const Router = () => {
 
     return (
 
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route path="/" component={App} exact />
                 <Route path="/image/:id" component={ImageView} />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 
 }
